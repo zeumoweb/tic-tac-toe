@@ -6,7 +6,7 @@ const start = document.querySelectorAll(".start.new")
 
 const newGame = () => {
     game = new Game();
-    g.upDateBoard(game)
+    g.upDateBoard(game);
     pop.style.display = "none";
 }
 
@@ -30,7 +30,7 @@ const handleClick = (i) => {
 
 //defining what happends once the restart button is clicked
 start.forEach( (start) => {
-    start.addEventListener("click", newGame)
+    start.addEventListener("click", newGame);
 });
 
 tiles.forEach( (tile) => {
@@ -48,3 +48,9 @@ document.querySelector(".close").addEventListener("click", (e) => {
 // document.querySelector("#start").addEventListener("click", (e) => {
 //     pop.style.display = "none";
 // });
+
+
+// function play(){
+//     var audio = new Audio("https://youtu.be/Ty6VJE1aGRA");
+//     audio.play();
+// }

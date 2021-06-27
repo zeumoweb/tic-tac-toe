@@ -7,8 +7,7 @@ export default class GameView{
     upDateBoard(game){
         this.upDateTurn(game);
         for(let i=0; i<game.board.length; i++){
-            const tile = document.querySelector(`.board-tile[data-index = '${i}'`);
-            console.log(tile);
+            const tile = document.querySelector(`.board-tile[data-index = '${i}'`)
             tile.textContent = game.board[i];
             if(game.board[i] == 'X'){
                 tile.classList.remove("tile-o");
